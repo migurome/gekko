@@ -4,3 +4,5 @@
 1.03 - Se fixea la insercción de volumetría
 1.04 - Se incluye el procesamiento e insercción de grandes ficheros .csv
 1.05 - Se mejora la descarga de datos
+1.06 - La descarga de datos se paraleliza
+       * las pruebas con 10 procesos en paralelo van estupendamente

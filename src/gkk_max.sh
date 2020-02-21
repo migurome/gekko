@@ -16,15 +16,22 @@ DIR_TMP="tmp"
 FILE_TMP="file_gkk_max"
 FILE_TMP_2="file2_gkk_max"
 FILE_T="tickers.txt"
+SQBBDD="MajinBuu"
 
-SQBBDD="MajinBuu.db"
 
-sqlite3 $DIR_DATA/$SQBBDD "select cau_001 from day_st order by cau_001 " | uniq > $DIR_TMP/$FILE_TMP
+for LETTER in A B C D E F G H I J
+do
+    sqlite3 $DIR_DATA/$SQBBDD$LETTER.db "select cau_001 from day_st order by cau_001 " | uniq > $DIR_TMP/$FILE_TMP$LETTER
+done
 
-while IFS= read -r line; do
-    MAX=$(sqlite3 $DIR_DATA/$SQBBDD "select cau_003 from day_st where cau_001='$line' order by cau_003" | tail -1)
-    MIN=$(sqlite3 $DIR_DATA/$SQBBDD "select cau_003 from day_st where cau_001='$line' order by cau_003" | head -1)
-    sqlite3 $DIR_DATA/$SQBBDD "update day_st set cau_005 = '$MAX', cau_006 ='$MIN' where cau_001='$line';"
-done < $DIR_TMP/$FILE_TMP
+for LETTER in A B C D E F G H I J
+do
+    echo "Creando max y min de $LETTER"	
+    while IFS= read -r line; do
+        MAX=$(sqlite3 $DIR_DATA/$SQBBDD$LETTER.db "select cau_003 from day_st where cau_001='$line' order by cau_003" | tail -1)
+        MIN=$(sqlite3 $DIR_DATA/$SQBBDD$LETTER.db "select cau_003 from day_st where cau_001='$line' order by cau_003" | head -1)
+        sqlite3 $DIR_DATA/$SQBBDD$LETTER.db "update day_st set cau_005 = '$MAX', cau_006 ='$MIN' where cau_001='$line';"
+    done < $DIR_TMP/$FILE_TMP$LETTER
+done
 
-rm $DIR_TMP/$FILE_TMP
+rm $DIR_TMP/$FILE_TMP*
