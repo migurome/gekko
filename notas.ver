@@ -1,0 +1,6 @@
+1.0  - Nace
+1.01 - Se ajustan las descargas en días laborales
+1.02 - Se modifica la estructura de las bbdd y se crea una tabla para almacenar el último registro
+1.03 - Se fixea la insercción de volumetría
+1.04 - Se incluye el procesamiento e insercción de grandes ficheros .csv
+1.05 - Se mejora la descarga de datos

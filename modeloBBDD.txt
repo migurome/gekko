@@ -1,0 +1,26 @@
+CREATE TABLE day_st (cau_000 char(50) PRIMARY KEY, cau_001 char(20), cau_002 date, cau_003 real, cau_004 integer, cau_005 real, cau_006 real, cau_007 boolean, cau_008 boolean, cau_009 real, cau_010 real, real, cau_012 real, cau_013 real, cau_014 real, cau_015 real, cau_016 char(100), cau_017 char(100), cau_018 char(100), cau_019 char(100), cau_020 char(100), cau_021 char(100), cau_022 char(100), cau_023 char(100), cau_024 char(100), cau_025 char(100), cau_026 char(100), cau_027 char(100), cau_028 char(100), cau_029 char(100), cau_030 char(100), cau_031 char(100), cau_032 char(100), cau_033 char(100), cau_034 char(100), cau_035 char(100), cau_036 char(100), cau_037 char(100), cau_038 char(100), cau_039 char(100), cau_040 char(100), cau_041 char(100), cau_042 char(100), cau_043 char(100), cau_044 char(100), cau_045 char(100), cau_046 char(100), cau_047 char(100), cau_048 char(100), cau_049 char(100), cau_050 char(100));
+
+CREATE TABLE lista_tickers ( tickers char (20) PRIMARY KEY);
+
+CREATE TABLE last_st (cau_000 char(50), cau_001 char(20) PRIMARY KEY, cau_002 date, cau_003 real, cau_004 integer, cau_005 real, cau_006 real, cau_007 boolean, cau_008 boolean, cau_009 real, cau_010 real, cau_011 real, cau_012 real, cau_013 real, cau_014 real, cau_015 real, cau_016 char(100), cau_017 char(100), cau_018 char(100), cau_019 char(100), cau_020 char(100), cau_021 char(100), cau_022 char(100), cau_023 char(100), cau_024 char(100), cau_025 char(100), cau_026 char(100), cau_027 char(100), cau_028 char(100), cau_029 char(100), cau_030 char(100), cau_031 char(100), cau_032 char(100), cau_033 char(100), cau_034 char(100), cau_035 char(100), cau_036 char(100), cau_037 char(100), cau_038 char(100), cau_039 char(100), cau_040 char(100), cau_041 char(100), cau_042 char(100), cau_043 char(100), cau_044 char(100), cau_045 char(100), cau_046 char(100), cau_047 char(100), cau_048 char(100), cau_049 char(100), cau_050 char(100));
+
+
+INSERT INTO info_stocks (cau_000, cau_001, cau_002, cau_003, cau_004, cau_005, cau_006, cau_007, cau_008, cau_009, cau_010, cau_011, cau_012, cau_013, cau_014, cau_015, cau_016, cau_017, cau_018, cau_019, cau_020, cau_021, cau_022, cau_023, cau_024, cau_025, cau_026, cau_027, cau_028, cau_029, cau_030, cau_031, cau_032, cau_033, cau_034, cau_035, cau_036, cau_037, cau_038, cau_039, cau_040, cau_041, cau_042, cau_043, cau_044, cau_045, cau_046, cau_047, cau_048, cau_049, cau_050)VALUES( "APPL", "5000","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","");
+
+
+UPDATE table_name
+SET column1 = value1, column2 = value2...., columnN = valueN
+WHERE [condition];
+
+------------------------------------
+cau_000 char(50)     dia+ticker
+cau_001 char(20)     ticker
+cau_002 date         fecha
+cau_003 real         cierre
+cau_004 integer      volumen
+cau_005 real         maximo
+cau_006 real         minimo
+cau_007 boolean      esMaximoH
+cau_008 boolean      esMinimoH
+cau_009 real         % de crecimiento
+-------------------------------------
