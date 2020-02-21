@@ -17,7 +17,6 @@ FILE_TMP="file_gkk_max"
 FILE_T="tickers.txt"
 SQBBDD="MajinBuu"
 
-
 for LETTER in A B C D E F G H I J
 do
     sqlite3 $DIR_DATA/$SQBBDD$LETTER.db "select cau_001 from day_st order by cau_001 " | uniq > $DIR_TMP/$FILE_TMP$LETTER
