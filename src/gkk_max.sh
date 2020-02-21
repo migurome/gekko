@@ -14,7 +14,6 @@ DIR_DATA="data"
 
 DIR_TMP="tmp"
 FILE_TMP="file_gkk_max"
-FILE_TMP_2="file2_gkk_max"
 FILE_T="tickers.txt"
 SQBBDD="MajinBuu"
 
