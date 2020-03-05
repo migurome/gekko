@@ -1,0 +1,10 @@
+#!/bin/bash
+
+DIR_SRC="src"
+
+echo "Lanzando gkk_max"
+$DIR_SRC/gkk_max.sh
+echo "Lanzando gkk_winner"
+$DIR_SRC/gkk_winner.sh
+echo "Lanzando gkk_mediapro"
+$DIR_SRC/gkk_mediapro.sh
