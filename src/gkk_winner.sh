@@ -8,7 +8,7 @@ FILE_TMP="file_winner"
 FILE_TMP_2="file_winner_2"
 FILE_TMP_LISTA="file_gkk_winner"
 
-SQBBDD="MajinBuu.db"
+SQBBDD="Kakaroto.db"
 
 YESTERDAY=$(date --date='-1 day' +"%Y-%m-%d")
 
