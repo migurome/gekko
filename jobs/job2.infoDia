@@ -2,9 +2,10 @@
 
 DIR_SRC="src"
 
+$DIR_SRC/gkk_selector.sh
 echo "Lanzando gkk_max"
-$DIR_SRC/gkk_max.sh
-echo "Lanzando gkk_winner"
-$DIR_SRC/gkk_winner.sh
-echo "Lanzando gkk_mediapro"
-$DIR_SRC/gkk_mediapro.sh
+#$DIR_SRC/gkk_max.sh
+#echo "Lanzando gkk_winner"
+#$DIR_SRC/gkk_winner.sh
+#echo "Lanzando gkk_mediapro"
+#$DIR_SRC/gkk_mediapro.sh
