@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Analiza la BBDD ya mergeada y calcula el porcentaje de crecimiento desde hace x días
+
 DIR_CFG="cfg"
 DIR_DATA="data"
 
